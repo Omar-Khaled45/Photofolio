@@ -54,8 +54,3 @@ dropdownButton.addEventListener("click", () => {
   dropdownButton.classList.toggle("active");
   subMenu.classList.toggle("show");
 });
-
-// Initiate glightbox
-const glightbox = GLightbox({
-  selector: ".glightbox",
-});
