@@ -14,8 +14,42 @@
   --font-secondary: 'Cardo', serif; 
 }
 
+body { 
+  font-family: var(--font-primary) !important;
+}
+
 section {
   background-color: #000;
+}
+
+.title {
+  padding-bottom: 40px;
+  color: var(--text-color);
+}
+
+.title span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.title h2 {
+  font-size: 36px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+
+.title span::after {
+  content: "";
+  height: 1px;
+  width: 120px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 140px;
 }
 
 .page-header {
@@ -43,7 +77,6 @@ section {
   padding: 12px 40px;
   font-size: 14px;
   background-color: var(--main-color);
-  font-family: var(--font-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--text-color);
@@ -99,7 +132,6 @@ section {
 #header .navbar > ul li a {
   padding: 10px 0 10px 30px;
   font-size: 13px;
-  font-family: var(--font-primary);
   color: var(--secondary-text-color);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -402,7 +434,6 @@ section {
 #about .container .info-box h4 {
   color: var(--main-color);
   font-weight: 600;
-  font-family: var(--font-primary);
 }
 
 #about .container .info-box ul li {
@@ -422,3 +453,55 @@ section {
   margin-right: 10px;
 }
 /* End About */
+/* Start Testimonials */
+.testimonials .carousel .carousel-indicators {
+  bottom: -30px;
+}
+
+.testimonials .carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonials .carousel .carousel-indicators li.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonials .carousel .info-card {
+  padding: 30px;
+  margin: 40px 30px;
+  background-color: #161718;
+  transition: var(--tr-duration);
+  color: var(--text-color);
+}
+
+.testimonials .carousel .info-card .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+
+.testimonials .carousel .info-card p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.testimonials .carousel .info-card .profile img {
+  width: 90px;
+  border: 5px solid #474a4d;
+  border-radius: 50%;
+}
+
+.testimonials .carousel .info-card .profile h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  font-weight: 700;
+}
+
+.testimonials .carousel .info-card .profile h4 {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+/* End Testimonials */
