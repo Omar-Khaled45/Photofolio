@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.min.css">
+  <!-- G-lightbox Gallery -->
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <!-- Swiper File -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,16 +179,9 @@
         <h2 class="mb-0">What they are saying</h2>
       </div>
       <!-- Start Swiper -->
-      <div id="testimonialsSlider" class="carousel slide">
-        <ol class="carousel-indicators">
-          <li class="active" data-bs-target="#testimonialsSlider" data-bs-slide-to="0"></li>
-          <li data-bs-target="#testimonialsSlider" data-bs-slide-to="1"></li>
-          <li data-bs-target="#testimonialsSlider" data-bs-slide-to="2"></li>
-          <li data-bs-target="#testimonialsSlider" data-bs-slide-to="3"></li>
-          <li data-bs-target="#testimonialsSlider" data-bs-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <div class="swiper testimonials-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <div class="info-card text-center">
               <ul class="list-unstyled d-flex align-items-center justify-content-center stars">
                 <li><i class="fa-solid fa-star"></i></li>
@@ -201,7 +198,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <div class="info-card text-center">
               <ul class="list-unstyled d-flex align-items-center justify-content-center stars">
                 <li><i class="fa-solid fa-star"></i></li>
@@ -217,8 +214,8 @@
                 <h4>Designer</h4>
               </div>
             </div>
-          </div> 
-          <div class="carousel-item">
+          </div>
+          <div class="swiper-slide">
             <div class="info-card text-center">
               <ul class="list-unstyled d-flex align-items-center justify-content-center stars">
                 <li><i class="fa-solid fa-star"></i></li>
@@ -235,7 +232,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <div class="info-card text-center">
               <ul class="list-unstyled d-flex align-items-center justify-content-center stars">
                 <li><i class="fa-solid fa-star"></i></li>
@@ -252,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="swiper-slide">
             <div class="info-card text-center">
               <ul class="list-unstyled d-flex align-items-center justify-content-center stars">
                 <li><i class="fa-solid fa-star"></i></li>
@@ -270,16 +267,26 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
       <!-- End Swiper -->
     </div>
   </section>
+  <!-- Start Footer -->
+  <footer id="footer" class="text-center">
+    <div class="copyright">
+      &copy; Copyright <span class="fw-bold">PhotoFolio</span>. All Rights Reserved
+    </div>
+  </footer>
+  <!-- End Footer -->
   <!-- Scroll To Top Button -->
   <div class="scroll-top d-flex justify-content-center align-items-center">
     <i class="fa-solid fa-arrow-up"></i>
   </div>
   <!-- Bootstrap File -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper File -->
+  <script src="js/swiper-bundle.min.js"></script>
   <!-- Main Js File -->
   <script src="js/main.js"></script>
 </body>

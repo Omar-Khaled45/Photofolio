@@ -454,22 +454,21 @@ section {
 }
 /* End About */
 /* Start Testimonials */
-.testimonials .carousel .carousel-indicators {
-  bottom: -30px;
+.testimonials-swiper .swiper-slide {
+  opacity: 0.2;
 }
 
-.testimonials .carousel .carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
+.testimonials-swiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.12);
 }
 
-.testimonials .carousel .carousel-indicators li.active {
-  background-color: rgba(255, 255, 255, 0.5);
+.testimonials-swiper .swiper-slide .swiper-slide-shadow-left,
+.testimonials-swiper .swiper-slide .swiper-slide-shadow-right {
+  background-image: none;
 }
 
-.testimonials .carousel .info-card {
+.testimonials .testimonials-swiper .info-card {
   padding: 30px;
   margin: 40px 30px;
   background-color: #161718;
@@ -477,31 +476,41 @@ section {
   color: var(--text-color);
 }
 
-.testimonials .carousel .info-card .stars i {
+.testimonials .testimonials-swiper .info-card .stars i {
   color: #ffc107;
   margin: 0 1px;
 }
 
-
-.testimonials .carousel .info-card p {
+.testimonials .testimonials-swiper .info-card p {
   font-family: 'Open Sans', sans-serif;
 }
 
-.testimonials .carousel .info-card .profile img {
+.testimonials .testimonials-swiper .info-card .profile img {
   width: 90px;
   border: 5px solid #474a4d;
   border-radius: 50%;
 }
 
-.testimonials .carousel .info-card .profile h3 {
+.testimonials .testimonials-swiper .info-card .profile h3 {
   font-size: 18px;
   margin: 10px 0 5px;
   font-weight: 700;
 }
 
-.testimonials .carousel .info-card .profile h4 {
+.testimonials .testimonials-swiper .info-card .profile h4 {
   font-size: 14px;
   margin: 0;
   font-weight: 600;
+}
+
+.testimonials .testimonials-swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+.testimonials .testimonials-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /* End Testimonials */
