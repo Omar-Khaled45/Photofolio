@@ -454,13 +454,15 @@ section {
 }
 /* End About */
 /* Start Testimonials */
-.testimonials-swiper .swiper-slide {
-  opacity: 0.2;
-}
-
-.testimonials-swiper .swiper-slide-active {
-  opacity: 1;
-  transform: scale(1.12);
+@media (min-width: 1200px) {
+  .testimonials-swiper .swiper-slide {
+    opacity: 0.2;
+  }
+  
+  .testimonials-swiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.12) !important;
+  }
 }
 
 .testimonials-swiper .swiper-slide .swiper-slide-shadow-left,
