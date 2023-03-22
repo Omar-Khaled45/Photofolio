@@ -41,22 +41,22 @@
             </a>
             <ul class="list-unstyled sub-menu">
               <li>
-                <a href="#" class="dropdown-item">Nature</a>
+                <a href="gallery.html" class="dropdown-item">Nature</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item">People</a>
+                <a href="gallery.html" class="dropdown-item">People</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item">Architecture</a>
+                <a href="gallery.html" class="dropdown-item">Architecture</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item">Animals</a>
+                <a href="gallery.html" class="dropdown-item">Animals</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item">Sports</a>
+                <a href="gallery.html" class="dropdown-item">Sports</a>
               </li>
               <li>
-                <a href="#" class="dropdown-item">Travel</a>
+                <a href="gallery.html" class="dropdown-item">Travel</a>
               </li>
             </ul>
           </li>
@@ -64,7 +64,7 @@
             <a href="services.html" class="nav-link">Services</a>
           </li>
           <li>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -97,7 +97,7 @@
         <div class="col-lg-6 text-center">
           <h2>About</h2>
           <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-          <a href="#" class="btn start">Available For Hire</a>
+          <a href="contact.html" class="btn button">Available For Hire</a>
         </div>
       </div>
     </div>
@@ -287,6 +287,30 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- Swiper File -->
   <script src="js/swiper-bundle.min.js"></script>
+  <!-- Swiper Initiate -->
+  <script>
+    const swiper = new Swiper(".testimonials-swiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   <!-- Main Js File -->
   <script src="js/main.js"></script>
 </body>

@@ -74,7 +74,7 @@ section {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.btn.start {
+.btn.button {
   padding: 12px 40px;
   font-size: 14px;
   background-color: var(--main-color);
@@ -84,14 +84,17 @@ section {
   transition: var(--tr-duration);
 }
 
-.btn.start:active {
+.btn.button:active,
+.btn.button:focus-visible {
   border-color: var(--main-color) !important;
   background-color: var(--main-color) !important;
+  color: #fff !important;
 }
 
 @media (hover: hover) {
-  .btn.start:hover {
+  .btn.button:hover {
     background-color: #2CBC85;
+    color: #fff;
   }
 }
 /* End Global */
@@ -410,6 +413,7 @@ section {
   position: fixed;
   bottom: 0;
   right: 15px;
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   cursor: pointer;
@@ -591,3 +595,212 @@ section {
   font-size: 18px;
 }
 /* End Pricing */
+/* Start Contact */
+#contact .container .info {
+  font-family: 'Open Sans', sans-serif;
+}
+#contact .container .info i {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #222425;
+  font-size: 18px;
+  margin-right: 15px;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-shrink: 0;
+  transition: var(--tr-duration);
+}
+
+@media (hover: hover) {
+  #contact .container .info:hover i {
+    background-color: var(--main-color);
+    color: #FFF;
+  }
+}
+
+#contact .container .info h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#contact .container .info span {
+  color: #FFF;
+  font-size: 14px;
+}
+
+#contact .container .input input,
+#contact .container .input textarea {
+  background-color: var(--secondary-color);
+  border: 1px solid #2E3123;
+  color: #FFF;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+  caret-color: var(--main-color);
+}
+
+#contact .container .input input::placeholder,
+#contact .container .input textarea::placeholder {
+  color: rgba(255, 255, 255, .5);
+  transition: var(--tr-duration);
+} 
+
+#contact .container .input input:focus::placeholder,
+#contact .container .input textarea:focus::placeholder {
+  opacity: 0;
+}
+
+#contact .container .input input {
+  height: 44px;
+}
+
+#contact .container .input textarea {
+  resize: none;
+  padding: 10px 12px;
+}
+/* End Contact */
+/* Start Single Gallery */
+#single-gallery .container .carousel {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  #single-gallery .container .carousel {
+    width: 75%;
+  }
+}
+
+#single-gallery .container .carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+#single-gallery .container .carousel .carousel-indicators li.active {
+  background-color: var(--main-color);
+}
+
+#single-gallery .container .carousel .carousel-control-next,
+#single-gallery .container .carousel .carousel-control-prev,
+#single-gallery .container .carousel .carousel-control-next:focus,
+#single-gallery .container .carousel .carousel-control-prev:focus {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+}
+
+@media (hover: hover) {
+  #single-gallery .container .carousel .carousel-control-next:hover,
+  #single-gallery .container .carousel .carousel-control-prev:hover {
+    opacity: .9;
+  }
+}
+
+
+#single-gallery .container .carousel .carousel-control-next {
+  right: 5px;
+}
+
+#single-gallery .container .carousel .carousel-control-prev {
+  left: 5px;
+}
+
+#single-gallery .container:nth-child(2) {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#single-gallery .container:nth-child(2) h3 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+
+#single-gallery .container:nth-child(2) .text-box {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#single-gallery .container:nth-child(2) .text-box i {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+#single-gallery .container:nth-child(2) .text-box i.fa-quote-left {
+  margin-right: 5px;
+}
+
+#single-gallery .container:nth-child(2) .text-box i.fa-quote-right {
+  margin-left: 5px;
+}
+
+#single-gallery .container:nth-child(2) .text-box .info  {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#single-gallery .container:nth-child(2) .text-box .info img {
+  width: 90px;
+  border: 6px solid #2e3133;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#single-gallery .container:nth-child(2) .text-box .info h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+#single-gallery .container:nth-child(2) .text-box .info span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px; 
+}
+
+#single-gallery .container:nth-child(2) .project-info h3 {
+  font-family: var(--font-secondary);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#single-gallery .container:nth-child(2) .project-info h3::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#single-gallery .container:nth-child(2) .project-info li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+#single-gallery .container:nth-child(2) .project-info h5 {
+  margin-bottom: 0;
+  color: #6b7075;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#single-gallery .container:nth-child(2) .project-info span a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+/* End Single Gallery */

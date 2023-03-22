@@ -55,25 +55,7 @@ dropdownButton.addEventListener("click", () => {
   subMenu.classList.toggle("show");
 });
 
-// Swiper Initiate
-const swiper = new Swiper(".testimonials-swiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 0,
-    modifier: 1,
-  },
-  breakpoints: {
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+const submitBtn = document.querySelector("#contact .submit");
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
 });
