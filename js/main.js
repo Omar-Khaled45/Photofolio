@@ -1,3 +1,14 @@
+// Preloader
+const preloader = document.querySelector("#preloader");
+window.onload = () => {
+  setTimeout(() => {
+    preloader.classList.add("loaded");
+  }, 1000);
+  setTimeout(() => {
+    preloader.remove();
+  }, 2000);
+};
+
 const scrollTop = document.querySelector(".scroll-top");
 const header = document.getElementById("header");
 
@@ -55,7 +66,7 @@ dropdownButton.addEventListener("click", () => {
   subMenu.classList.toggle("show");
 });
 
-const submitBtn = document.querySelector("#contact .submit");
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-});
+// const submitBtn = document.querySelector("#contact .submit");
+// submitBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+// });

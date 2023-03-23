@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.min.css">
+  <!-- AOS File -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +92,7 @@
   <!-- End Header -->
   <!-- Start Page Header -->
   <section class="page-header">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
           <h2>Gallery Single</h2>
@@ -103,7 +105,7 @@
   <!-- End Page Header -->
   <!-- Start Image Carousel -->
   <section id="single-gallery" class="single-gallery pb-5">
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-center" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div id="singleGallery" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li class="active" data-bs-target="#singleGallery" data-bs-slide-to="0"></li>
@@ -203,8 +205,21 @@
   <div class="scroll-top d-flex justify-content-center align-items-center">
     <i class="fa-solid fa-arrow-up"></i>
   </div>
+  <!-- Start Preloader -->
+  <div id="preloader">
+    <div class="loading-line"></div>
+  </div>
+  <!-- End Preloader -->
   <!-- Bootstrap File -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initiate AOS -->
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
   <!-- JS Main File -->
   <script src="js/main.js"></script>
 </body>

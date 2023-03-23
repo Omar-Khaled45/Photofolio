@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/all.min.css">
   <!-- Swiper File -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- AOS File -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,7 +94,7 @@
   <!-- End Header -->
   <!-- Start Page Header -->
   <section class="page-header">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
           <h2>Services</h2>
@@ -105,7 +107,7 @@
   <!-- End Page Header -->
   <!-- Start Services -->
   <section id="services" class="services pb-5">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6">
           <div class="box text-white text-center text-md-start">
@@ -142,7 +144,7 @@
   <!-- End Services -->
   <!-- Start Pricing -->
   <section id="pricing" class="pricing pt-5 pb-5">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div class="title">
         <span class="text-uppercase position-relative">Prices</span>
         <h2 class="mb-0">Check my adorable pricing</h2>
@@ -297,6 +299,11 @@
   <div class="scroll-top d-flex justify-content-center align-items-center">
     <i class="fa-solid fa-arrow-up"></i>
   </div>
+  <!-- Start Preloader -->
+  <div id="preloader">
+    <div class="loading-line"></div>
+  </div>
+  <!-- End Preloader -->
   <!-- Bootstrap File -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- Swiper File -->
@@ -323,6 +330,14 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+    });
+  </script>
+  <!-- AOS Animation Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initiate AOS -->
+  <script>
+    AOS.init({
+      once: true
     });
   </script>
   <!-- Main Js File -->

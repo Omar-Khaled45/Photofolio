@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.min.css">
+  <!-- AOS File -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +92,7 @@
   <!-- End Header -->
   <!-- Start Page Header -->
   <section class="page-header">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
           <h2>Contact</h2>
@@ -102,7 +104,7 @@
   <!-- End Page Header -->
   <!-- Start Contact -->
   <section id="contact" class="contact pb-5">
-    <div class="container">
+    <div class="container" data-aos="fade" data-aos-delay="700" data-aos-duration="1500">
       <div class="row justify-content-center gy-4">
         <div class="col-lg-3">
           <div class="info d-flex">
@@ -158,6 +160,11 @@
     </div>
   </section>
   <!-- End Contact -->
+  <!-- Start Preloader -->
+  <div id="preloader">
+    <div class="loading-line"></div>
+  </div>
+  <!-- End Preloader -->
   <!-- Start Footer -->
   <footer id="footer" class="text-center">
     <div class="copyright">
@@ -171,6 +178,14 @@
   </div>
   <!-- Bootstrap File -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation Files -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initiate AOS -->
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
   <!-- Main Js File -->
   <script src="js/main.js"></script>
 </body>
