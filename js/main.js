@@ -7,6 +7,12 @@ window.onload = () => {
   setTimeout(() => {
     preloader.remove();
   }, 2000);
+
+  // Initiate AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
 };
 
 const scrollTop = document.querySelector(".scroll-top");
