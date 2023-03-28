@@ -807,6 +807,8 @@ section {
 /* Start Preloader */
 #preloader {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   z-index: 9999;
@@ -836,10 +838,10 @@ section {
 #preloader .loading-line {
   height: 300px;
   width: 1px;
-  margin: auto;
   position: relative;
   overflow: hidden;
   transition: all .8s;
+  z-index: 999;
 }
 
 #preloader.loaded .loading-line,
